@@ -1,0 +1,15 @@
+Integrantes: Flávio Manuel e Dannyela Paiva
+
+------Executando o CreateServer.js----------
+1. Com o arquivo aberto no CMD, execute comando  $ node examples/createServer
+2. Em um CMD separado, execute o comando para o ip $ curl http://www.google.com --socks5 127.0.0.1:1080
+
+------Executando o CreateServerConnectionFilter.js----------
+1. Com o arquivo aberto no CMD, execute comando $ node examples/createServerConnectionFilter.js
+2. Em um CMD separado, execute um dos comando para os seguintes ip's: 
+$ curl http://www.us.gov --socks5 127.0.0.1:1080   # Permitido
+$ curl http://www.google.com --socks5 127.0.0.1:1080   # Bloqueado
+
+------Executando o CreateServerWithAuthentication.js----------
+1. Com o arquivo aberto no CMD, execute comando $ node examples/createServerWithAuthentication
+2. 2. Em um CMD separado, execute o comando para o ip $ curl http://www.google.com --socks5 127.0.0.1:1080 --proxy-user foo:bar
